@@ -1,0 +1,40 @@
+
+class HelloWorld {
+    public static void main(String[] args) 
+    {
+        int temp = 4, num = 5, checknum = -1;
+        HelloWorld a = new HelloWorld();
+    
+        System.out.println("Quadrat von " + temp + " ist " + a.square(temp));
+        System.out.println("Summe von " + temp + " und "+ num + " : " + a.sum(temp, num));
+        System.out.println("Fakultat von " + temp + " ist " + a.dofakultat(temp));
+        System.out.println((a.ispositive(checknum) ? "Nummer" + checknum + " ist positive" : "Nummer" + checknum + " ist negative")); 
+        
+        
+        
+        
+    }
+    public static double square(double a)
+    {
+        return a*a;
+    }
+    public static double sum(double a, double b)
+    {
+        return a+b;
+    }
+    public static boolean ispositive(double a)
+    {
+        if(a<0)
+        return false;
+        else
+        return true;
+    }
+    public static int dofakultat(int a)
+    {
+        if(a == 1)
+            return 1;
+        else
+            return a * dofakultat(a-1);
+    }
+    
+}

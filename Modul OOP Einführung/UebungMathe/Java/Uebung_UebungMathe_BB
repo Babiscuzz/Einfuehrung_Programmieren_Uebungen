@@ -3,17 +3,17 @@ class HelloWorld {
     public static void main(String[] args) 
     {
         int temp = 4, num = 5, checknum = -1;
-        HelloWorld a = new HelloWorld();
     
-        System.out.println("Quadrat von " + temp + " ist " + a.square(temp));
-        System.out.println("Summe von " + temp + " und "+ num + " : " + a.sum(temp, num));
-        System.out.println("Fakultat von " + temp + " ist " + a.dofakultat(temp));
-        System.out.println((a.ispositive(checknum) ? "Nummer" + checknum + " ist positive" : "Nummer" + checknum + " ist negative")); 
-        
-        
-        
+        System.out.println("Quadrat von " + temp + " ist " + MathAufgaben.square(temp));
+        System.out.println("Summe von " + temp + " und "+ num + " : " + MathAufgaben.sum(temp, num));
+        System.out.println("Fakultat von " + temp + " ist " + MathAufgaben.dofakultat(temp));
+        System.out.println((MathAufgaben.ispositive(checknum) ? "Nummer" + checknum + " ist positive" : "Nummer" + checknum + " ist negative")); 
         
     }
+}
+
+class MathAufgaben
+{
     public static double square(double a)
     {
         return a*a;
